@@ -23,7 +23,6 @@ printf "Minikube IP: ${IP}"
 
 # build images
 echo "Building images.."
-cat ./my_password.txt | docker login --username honeybeat1 --password-stdin
 docker build -t nginx ./srcs/nginx
 #docker run -it -p 80:80 -p 443:443 nginx
 
